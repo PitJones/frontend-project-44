@@ -1,7 +1,12 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/PitJones/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/PitJones/frontend-project-44/actions)
 
-#Five brain-games
+# Five brain-games
+My first project: 5 games with used command-line.
+### Installation:
+git clone git@github.com:PitJones/frontend-project-44.git
+cd frontend-project-44/
+npm link
 
 ## Description and demonstration:
 
