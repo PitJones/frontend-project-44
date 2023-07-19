@@ -46,12 +46,16 @@ npm link
 
 
 **Description:** *Find number is missing in the progression?*
+
 **Start game:** *Enter "brain-progression" in your command-line*
+
 [**Demo**](https://asciinema.org/a/cD9F6BIPoAYLe7BX8reis3Y5p)
 
 ### brain-prime
 
 
 **Description:** *Answer "yes" if given number is prime. Otherwise answer "no".*
+
 **Start game:** *Enter "brain-prime" in your command-line*
+
 [**Demo**](https://asciinema.org/a/9RNpoZ2QyrZRFBFcLcfm4beZE)
