@@ -29,7 +29,7 @@ const generalGameLogic = (gameDescription, gameLogic) => {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${name}`);
       return;
     }
-  } console.log(`Congratulation, ${name}`);
+  } console.log(`Congratulations, ${name}`);
 };
 
 export { randomNumberInRange, randomNumber, generalGameLogic };
