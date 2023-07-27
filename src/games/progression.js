@@ -25,7 +25,7 @@ const gameLogic = () => {
   const indexForSwap = randomIndexMassiv(arrayProgression);
   const result = arrayProgression[indexForSwap];
   arrayProgression[indexForSwap] = '..';
-  const question = `${arrayProgression}`;
+  const question = `${arrayProgression.join(' ')}`;
   return [String(result), question];
 };
 
