@@ -8,8 +8,11 @@
 My first project: 5 games with used command-line.
 
 ### System requirements
+
 **Minimum:**
+
 **OS:** *Windows 10 or Ubuntu 22.04*
+
 **Node version:** *20.3.1*
 
 ### Installation:
