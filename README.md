@@ -1,11 +1,16 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/PitJones/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/PitJones/frontend-project-44/actions)
 
-<a href="https://codeclimate.com/github/PitJones/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/92f187ae3939049cdea5/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/92f187ae3939049cdea5/maintainability)](https://codeclimate.com/github/PitJones/frontend-project-44/maintainability)
 
 # Five brain-games
 
 My first project: 5 games with used command-line.
+
+### System requirements
+**Minimum:**
+**OS:** *Windows 10 or Ubuntu 22.04*
+**Node version:** *20.3.1*
 
 ### Installation:
 
