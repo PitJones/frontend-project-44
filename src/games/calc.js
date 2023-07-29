@@ -18,7 +18,7 @@ const calculate = (x, y, operator) => {
 
 const getRandomOperator = () => {
   const firstIndex = 0;
-  const randomIndexOperator = generateRandomNumberInRange(firstIndex, operators.length);
+  const randomIndexOperator = generateRandomNumberInRange(firstIndex, operators.length - 1);
   return operators[randomIndexOperator];
 };
 
