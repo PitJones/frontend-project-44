@@ -14,7 +14,7 @@ const getArrayProgression = (length, firstNumber, stepProgression) => {
 
 const getRandomIndexMassiv = (massiv) => {
   const firstIndex = 0;
-  const indexMassiv = generateRandomNumberInRange(firstIndex, massiv.length);
+  const indexMassiv = generateRandomNumberInRange(firstIndex, massiv.length - 1);
   return indexMassiv;
 };
 
