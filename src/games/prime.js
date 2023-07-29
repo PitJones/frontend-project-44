@@ -1,4 +1,4 @@
-import { randomNumber, generalGameLogic } from '../index.js';
+import { generateRandomNumber, runGeneralGameLogic } from '../index.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -10,22 +10,19 @@ const isPrime = (number) => {
     if (number % divisor === 0) {
       return false;
     }
-  } return true;
+  }
+
+  return true;
 };
 
-const gameLogic = () => {
-  let result;
-  const question = randomNumber();
-  const x = isPrime(question);
-  if (x === true) {
-    result = 'yes';
-    return [String(result), question];
-  } result = 'no';
-  return [String(result), question];
+const runGameLogic = () => {
+  const question = generateRandomNumber();
+  const result = isPrime(question) ? 'yes' : 'no';
+  return [result, question];
 };
 
-const prime = () => {
-  generalGameLogic(gameDescription, gameLogic);
+const runPrimeGame = () => {
+  runGeneralGameLogic(gameDescription, runGameLogic);
 };
 
-export default prime;
+export default runPrimeGame;

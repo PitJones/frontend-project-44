@@ -1,22 +1,17 @@
-import { randomNumber, generalGameLogic } from '../index.js';
+import { generateRandomNumber, runGeneralGameLogic } from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const itEvenNumber = (num) => {
-  if (num % 2 === 0) {
-    return 'yes';
-  } return 'no';
+const isEvenNumber = (num) => num % 2 === 0;
+
+const runGameLogic = () => {
+  const number = generateRandomNumber();
+  const result = isEvenNumber(number) ? 'yes' : 'no';
+  return [String(result), number];
 };
 
-const gameLogic = () => {
-  const number = randomNumber();
-  const result = itEvenNumber(number);
-  const question = `${number}`;
-  return [String(result), question];
+const runEvenGame = () => {
+  runGeneralGameLogic(gameDescription, runGameLogic);
 };
 
-const even = () => {
-  generalGameLogic(gameDescription, gameLogic);
-};
-
-export default even;
+export default runEvenGame;

@@ -1,4 +1,4 @@
-import { randomNumber, generalGameLogic } from '../index.js';
+import { generateRandomNumber, generateRandomNumberInRange, runGeneralGameLogic } from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -16,20 +16,21 @@ const calculate = (x, y, operator) => {
   }
 };
 
-const randomOperator = () => {
-  const randomIndexOperator = Math.floor(Math.random() * operators.length);
+const getRandomOperator = () => {
+  const firstIndex = 0;
+  const randomIndexOperator = generateRandomNumberInRange(firstIndex, operators.length);
   return operators[randomIndexOperator];
 };
 
-const gameLogic = () => {
-  const firstNumber = randomNumber();
-  const secondNumber = randomNumber();
-  const operator = randomOperator();
+const runGameLogic = () => {
+  const firstNumber = generateRandomNumber();
+  const secondNumber = generateRandomNumber();
+  const operator = getRandomOperator();
   const result = calculate(firstNumber, secondNumber, operator);
   const question = `${firstNumber} ${operator} ${secondNumber}`;
   return [String(result), question];
 };
 
-const calcGame = () => generalGameLogic(gameDescription, gameLogic);
+const runCalcGame = () => runGeneralGameLogic(gameDescription, runGameLogic);
 
-export default calcGame;
+export default runCalcGame;
